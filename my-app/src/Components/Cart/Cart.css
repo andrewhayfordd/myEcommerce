@@ -1,0 +1,62 @@
+.Cart{
+    padding: 10px;
+}
+.Cart > .products{
+   width: 600px;
+   margin-bottom: 100px;
+}
+.Cart > .products .product{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Cart > .products .product .img{
+    background-color: #cfcfcf;
+    border-radius: 15px;
+}
+.Cart > .products .product .img img{
+    height: 90px;
+    width: 90px;
+}
+.Cart > .products .product .h4{
+    font-size: 14px;
+}
+.Cart > .products .product .p{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(185, 0, 0);
+}
+.Cart > .products .product .quantity{
+    font-weight: 700;
+}
+.Cart > .products .product .total{
+    font-weight: 700;
+}
+.Cart > .products .product button{
+    background: transparent;
+    border: solid rgb(185, 0, 0) 2px;
+    padding: 4px 6px;
+    border-radius: 10px;
+    color: rgb(185, 0, 0);
+    cursor: pointer;
+}
+.Cart > .cart-footer{
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Cart > .cart-footer button{
+    color: #fff;
+    background-color: rgb(185, 0, 0);
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 290px;
+}

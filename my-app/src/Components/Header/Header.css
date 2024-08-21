@@ -1,0 +1,59 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+}
+.Header > .logo a{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(185, 0, 0);
+    text-decoration: none;
+}
+.Header > nav{
+    display: flex;
+    gap: 15px;
+}
+.Header > nav li{
+    list-style-type: none;
+}
+.Header > nav li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+}
+.Header > .cart{
+    gap: 10px;
+    display: flex;
+}
+.Header > .cart div i{
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    align-items: center;
+}
+.Header > .cart .bag{
+    background-color: rgb(185, 0, 0);
+    padding: 1px 2px;
+    color: #fff;
+    border-radius: 7px;
+    position: relative;
+}
+.Header > .cart .bag i{
+    font-size: 17px;
+}
+  
+.Header > .cart .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 1px 7px;
+    font-size: 11px;
+    font-weight: 600;
+  }

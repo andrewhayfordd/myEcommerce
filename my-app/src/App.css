@@ -1,0 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.active span{
+  color: rgb(185, 0, 0);
+}

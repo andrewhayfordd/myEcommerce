@@ -1,0 +1,160 @@
+.ProductDetail{
+   
+}
+.ProductDetail > .container{
+    display: flex;
+    gap: 50px;
+    margin: 50px 130px;
+}
+.ProductDetail > .container .img{
+    background-color: #cfcfcf;
+    border-radius: 15px;
+    width: 320px;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+.ProductDetail > .container .img:hover{
+    background-color: rgb(185, 0, 0);
+}
+.ProductDetail > .container .img img{
+    height: 320px;
+    width: 320px;
+}
+.ProductDetail > .container h2{
+    color: #1d1d46;
+}
+.ProductDetail > .container .info .detail{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.ProductDetail > .container .info .description{
+    font-size: 14px;
+    color: #3f3f3f;
+    width: 500px;
+}
+.ProductDetail > .container .info .price{
+    color: rgb(185, 0, 0);
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.ProductDetail > .container .info .btn button{
+    background: transparent;
+    color: rgb(185, 0, 0);
+    border: solid rgb(185, 0, 0) 2px;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ProductDetail > .container .info .number-input {
+    display: inline-flex;
+    align-items: center;
+}
+.ProductDetail > .container .info .number-input h4{
+    margin-right: 15px;
+}
+  
+  .ProductDetail > .container .info .number-input button {
+    background-color: #f2f2f2;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+    margin: 5px;
+  }
+  
+  .ProductDetail > .container .info .number-input button.minus::before,
+  .ProductDetail > .container .info .number-input button.plus::before {
+    content: '';
+    position: absolute;
+    background-color: #333;
+    width: 12px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .ProductDetail > .container .info .number-input button.plus::after {
+    content: '';
+    position: absolute;
+    background-color: #333;
+    width: 2px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .ProductDetail > .container .info .number-input input[type=number] {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 0 5px;
+    -moz-appearance: textfield; /* Removes default number input styling in Firefox */
+  }
+  
+  .ProductDetail > .container .info .number-input button:active {
+    background-color: #ddd;
+  }
+
+
+
+  .ProductDetail > .products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+.ProductDetail > .products .product{
+    margin: 20px;
+    width: 250px;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+.ProductDetail > .products .product:hover{
+    transform: scale(1.05);
+}
+.ProductDetail > .products .product li{
+    list-style-type: none;
+}
+.ProductDetail > .products .product li .img{
+    background-color: #cfcfcf;
+    border-radius: 15px;
+}
+.ProductDetail > .products .product li .img img{
+    height: 250px;
+    width: 250px;
+}
+.ProductDetail > .products .product li .h2{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.ProductDetail > .products .product li .p{
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: rgb(185, 0, 0);
+}
+.ProductDetail > .products .product li button{
+    border: none;
+    background-color: rgb(185, 0, 0);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 600;
+}
+.ProductDetail > .head{
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #000129;
+}
