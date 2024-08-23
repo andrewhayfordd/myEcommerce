@@ -1,4 +1,4 @@
-.ProductDetail{
+/* .ProductDetail{
    
 }
 .ProductDetail > .container{
@@ -97,7 +97,7 @@
     border: 1px solid #ddd;
     font-size: 14px;
     padding: 0 5px;
-    -moz-appearance: textfield; /* Removes default number input styling in Firefox */
+    -moz-appearance: textfield; 
   }
   
   .ProductDetail > .container .info .number-input button:active {
@@ -157,4 +157,215 @@
     margin-top: 100px;
     margin-bottom: 50px;
     color: #000129;
+} */
+
+.ProductDetail {
+    padding: 20px;
+}
+
+.ProductDetail > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.ProductDetail > .container .img {
+    background-color: #cfcfcf;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 320px;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.ProductDetail > .container .img img {
+    width: 100%;
+    height: auto;
+}
+
+.ProductDetail > .container h2 {
+    color: #1d1d46;
+    text-align: center;
+}
+
+.ProductDetail > .container .info {
+    text-align: center;
+    max-width: 500px;
+}
+
+.ProductDetail > .container .info .detail {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.ProductDetail > .container .info .description {
+    font-size: 14px;
+    color: #3f3f3f;
+}
+
+.ProductDetail > .container .info .price {
+    color: rgb(185, 0, 0);
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.ProductDetail > .container .info .btn button {
+    background: transparent;
+    color: rgb(185, 0, 0);
+    border: solid rgb(185, 0, 0) 2px;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.ProductDetail > .container .info .number-input {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.ProductDetail > .container .info .number-input h4 {
+    margin-right: 15px;
+}
+
+.ProductDetail > .container .info .number-input button {
+    background-color: #f2f2f2;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.ProductDetail > .container .info .number-input button.minus::before,
+.ProductDetail > .container .info .number-input button.plus::before {
+    content: '';
+    position: absolute;
+    background-color: #333;
+    width: 12px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ProductDetail > .container .info .number-input button.plus::after {
+    content: '';
+    position: absolute;
+    background-color: #333;
+    width: 2px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ProductDetail > .container .info .number-input input[type=number] {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 0 5px;
+    -moz-appearance: textfield;
+}
+
+.ProductDetail > .container .info .number-input button:active {
+    background-color: #ddd;
+}
+
+.ProductDetail > .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.ProductDetail > .products .product {
+    width: 100%;
+    max-width: 250px;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.ProductDetail > .products .product:hover {
+    transform: scale(1.05);
+}
+
+.ProductDetail > .products .product li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.ProductDetail > .products .product li .img {
+    background-color: #cfcfcf;
+    border-radius: 15px;
+}
+
+.ProductDetail > .products .product li .img img {
+    width: 100%;
+    height: auto;
+}
+
+.ProductDetail > .products .product li .h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.ProductDetail > .products .product li .p {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(185, 0, 0);
+}
+
+.ProductDetail > .products .product li button {
+    border: none;
+    background-color: rgb(185, 0, 0);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.ProductDetail > .head {
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #000129;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .ProductDetail > .container {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 50px;
+        margin: 50px 130px;
+    }
+
+    .ProductDetail > .products {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .ProductDetail > .container .info .description {
+        width: 500px;
+    }
+
+    .ProductDetail > .products .product {
+        width: 220px;
+    }
 }

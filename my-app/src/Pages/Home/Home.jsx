@@ -10,7 +10,7 @@ import Drawer from "@mui/material/Drawer";
 import { useCart } from "../../Components/CartProvider/CartProvider";
 
 function Home() {
-  const { cart, removeFromCart } = useCart(); // Access cart and removeFromCart
+  const { cart, removeFromCart } = useCart();
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -18,8 +18,8 @@ function Home() {
     navigate(`/product/${product.id}`);
     setTimeout(() => {
       window.scrollTo(0, 0);
-      console.log('page to reload')
-  }, 0);
+      console.log("page to reload");
+    }, 0);
   };
 
   const toggleDrawer = (newOpen) => () => {
@@ -50,18 +50,22 @@ function Home() {
         </div>
       </div>
 
-      
-        <div className="latest">LATEST <span>ARRIVALS</span> </div>
-        <div className="products">
+      <div className="latest">
+        LATEST <span>ARRIVALS</span>
+      </div>
+      <div className="products">
         {latest.map((product) => (
-          <div className="product" key={product.id} onClick={() => viewProduct(product)}>
+          <div
+            className="product"
+            key={product.id}
+            onClick={() => viewProduct(product)}
+          >
             <li>
               <div className="img">
                 <img src={product.image} alt="" />
               </div>
               <div className="h2">{product.name}</div>
               <div className="p">${product.price}</div>
-              {/* <button onClick={() => viewProduct(product)}>View Details</button> */}
             </li>
           </div>
         ))}
@@ -74,14 +78,17 @@ function Home() {
 
       <div className="products">
         {products.map((product) => (
-          <div className="product" key={product.id} onClick={() => viewProduct(product)}>
+          <div
+            className="product"
+            key={product.id}
+            onClick={() => viewProduct(product)}
+          >
             <li>
               <div className="img">
                 <img src={product.image} alt="" />
               </div>
               <div className="h2">{product.name}</div>
               <div className="p">${product.price}</div>
-              {/* <button onClick={() => viewProduct(product)}>View Details</button> */}
             </li>
           </div>
         ))}
@@ -89,7 +96,7 @@ function Home() {
 
       <div>
         <Drawer open={open} onClose={toggleDrawer(false)}>
-          <Cart cart={cart} removeFromCart={removeFromCart} />
+          <Cart cart={cart} removeFromCart={removeFromCart} onClose={toggleDrawer(false)} />
         </Drawer>
       </div>
     </div>
@@ -97,4 +104,3 @@ function Home() {
 }
 
 export default Home;
-
