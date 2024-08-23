@@ -1,68 +1,3 @@
-/* .Cart{
-    padding: 10px;
-}
-.Cart > .products{
-   width: 600px;
-   margin-bottom: 100px;
-}
-.Cart > .products .product{
-    margin: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.Cart > .products .product .img{
-    background-color: #cfcfcf;
-    border-radius: 15px;
-}
-.Cart > .products .product .img img{
-    height: 90px;
-    width: 90px;
-}
-.Cart > .products .product .h4{
-    font-size: 14px;
-}
-.Cart > .products .product .p{
-    font-size: 13px;
-    font-weight: 600;
-    color: rgb(185, 0, 0);
-}
-.Cart > .products .product .quantity{
-    font-weight: 700;
-}
-.Cart > .products .product .total{
-    font-weight: 700;
-}
-.Cart > .products .product button{
-    background: transparent;
-    border: solid rgb(185, 0, 0) 2px;
-    padding: 4px 6px;
-    border-radius: 10px;
-    color: rgb(185, 0, 0);
-    cursor: pointer;
-}
-.Cart > .cart-footer{
-    position: fixed;
-    bottom: 0;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.Cart > .cart-footer button{
-    color: #fff;
-    background-color: rgb(185, 0, 0);
-    padding: 10px 50px;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    font-size: 20px;
-    font-weight: 500;
-    margin-left: 290px;
-}
- */
-
-
  .Cart {
     padding: 10px;
     margin: 0 auto;
@@ -89,7 +24,7 @@
 
 .Cart > .products .product .img img {
     height: 90px;
-    width: 90px;
+    width: 85px;
 }
 
 .Cart > .products .product .h4 {
@@ -174,27 +109,7 @@
     .Cart {
         width: 600px;
     }
-
-    /* .Cart > .products .product {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .Cart > .products .product .img img {
-        height: 70px;
-        width: 70px;
-    }
-
-    .Cart > .cart-footer button {
-        padding: 10px 30px;
-        margin-left: 0;
-        flex: 1;
-    }
-
-    .Cart > .cart-footer {
-        flex-direction: column;
-        align-items: flex-start;
-    } */
+   
 }
 
 @media (max-width: 767px) {
@@ -224,7 +139,7 @@
     }
     .Cart > .products .product .img img{
         width: 70px;
-        height: 70px;
+        height: 65px;
     }
     .Cart > .products .product button{
         font-size: 11px;
